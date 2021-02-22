@@ -3,3 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/yuniwirh/public_html/bookstore
     - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp * $DEPLOYPATH
