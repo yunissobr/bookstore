@@ -12,7 +12,7 @@ class Users extends Controller
     public function profile()
     {
         if(!get_is_loggedin()){
-            redirect('users/login');
+            redirect('auth/login');
         }
         $data = [
             'user' => get_is_loggedin() ? $this->user_model->read_by_id(get_current_user_id()) : null,
@@ -84,7 +84,7 @@ class Users extends Controller
     public function library($book_id = null)
     {
         if(!get_is_loggedin()){
-            redirect('users/login');
+            redirect('auth/login');
         }
         $data = [
             'user' => get_is_loggedin() ? $this->user_model->read_by_id(get_current_user_id()) : null,
