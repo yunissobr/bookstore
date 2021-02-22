@@ -1,18 +1,36 @@
 <?php
-  // DB Params
-  define('DB_HOST', 'localhost');
-  define('DB_USER', 'root');
-  define('DB_PASS', '');
-  define('DB_NAME', 'bookstore');
+# General Config
+$prod_env = true;
 
-  // App Root
-  define('APPROOT', dirname(dirname(__FILE__)));
-  // URL Root
-  define('URLROOT', 'http://127.0.0.1/bookstore/');
-  define('ROOT', dirname(dirname(dirname(__FILE__))));
+$host = 'localhost';
+$user = 'root';
+$pass = '';
+$dbname = 'bookstore';
+$urlroot = 'http://127.0.0.1/bookstore/';
 
-  // SITE CONSTANTS
-  define('AUTHOR','author');
-  define('STATUS_PAIED', 100);
-  // Site Name
-  define('SITENAME', 'Book Store');
+if ($prod_env) {
+  
+    $host = 'localhost';
+    $user = 'yuniwirh_bookstore';
+    $pass = 'n*W#N(4T~PeJ';
+    $dbname = 'yuniwirh_bookstore';
+    $urlroot = 'https://yuniss.com/bookstore/';
+}
+
+// DB Params
+define('DB_HOST', $host);
+define('DB_USER', $user);
+define('DB_PASS', $pass);
+define('DB_NAME', $dbname);
+
+// App Root
+define('APPROOT', dirname(dirname(__FILE__)));
+// URL Root
+define('URLROOT', $urlroot);
+define('ROOT', dirname(dirname(dirname(__FILE__))));
+
+// SITE CONSTANTS
+define('AUTHOR', 'author');
+define('STATUS_PAIED', 100);
+// Site Name
+define('SITENAME', 'Book Store');
