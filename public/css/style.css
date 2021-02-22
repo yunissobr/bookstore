@@ -1,0 +1,137 @@
+.no-book-container {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.img-empty-icon {
+  text-align: center;
+  margin: 2.4rem 0 1rem 0;
+}
+
+.b-dashed {
+  border: 2px solid #b7c5d2;
+  border-style: dashed;
+}
+
+.p-light {
+  font-size: 25px;
+  color: #b7c5d2;
+}
+
+.d-none {
+  display: none;
+}
+
+.cart-empty-container {
+  border: 2px solid #b7c5d2;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0 !important;
+  border-style: dashed;
+  text-align: center;
+  height: 100%;
+}
+.cart-empty-container p {
+  margin-top: 8%;
+  color: #aab7c3;
+}
+
+.text-small {
+  font-size: 12px;
+}
+
+.discount-container {
+  position: absolute;
+  z-index: 100;
+  background-color: #30c352;
+  color: white;
+  font-size: 11px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 3px 10px 5px 10px;
+  top: 1px;
+  right: 5px;
+  border-radius: 50px;
+}
+
+.loader {
+  font-size: 10px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: #11e1c2;
+  background: -moz-linear-gradient(
+    left,
+    #11e1c2 10%,
+    rgba(17, 225, 194, 0) 42%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #11e1c2 10%,
+    rgba(17, 225, 194, 0) 42%
+  );
+  background: -o-linear-gradient(left, #11e1c2 10%, rgba(17, 225, 194, 0) 42%);
+  background: -ms-linear-gradient(left, #11e1c2 10%, rgba(17, 225, 194, 0) 42%);
+  background: linear-gradient(to right, #11e1c2 10%, rgba(17, 225, 194, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #11e1c2;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.loader:after {
+  background: #ffffff;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+.description-text {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 26px;
+}
+.p-btn{
+  color: #11e1c2;
+  cursor: pointer;
+}
