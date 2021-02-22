@@ -1,7 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/example/public_html/bookstore
-    - /bin/cp -R public $DEPLOYPATH
-    - /bin/cp -R app $DEPLOYPATH
-    - /bin/cp -R .htaccess $DEPLOYPATH
+    - export DEPLOYPATH=/home/yuniwirh/public_html/bookstore
+    - /bin/cp * $DEPLOYPATH
